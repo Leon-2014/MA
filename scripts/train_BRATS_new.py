@@ -3,6 +3,10 @@ import torch
 import torch.nn as nn
 import torch.optim as optim
 from torch.utils.data import DataLoader
+import sys
+parent_dir = os.path.dirname(os.path.dirname(os.path.abspath(__file__))) # 将 models 文件夹路径添加到 sys.path
+print(parent_dir)
+sys.path.append(parent_dir)
 from models.UNet3D import UNet3D
 import torch.nn.functional as F
 import gc

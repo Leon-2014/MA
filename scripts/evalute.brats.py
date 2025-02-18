@@ -24,7 +24,7 @@ print(f"Using device: {device}")
 # **加载模型**
 model = UNet3D(in_channels=4, out_channels=1)  # BraTS 需要 4 通道输入，1 通道输出
 model.load_state_dict(torch.load(
-    "/Users/ranxu/Desktop/DIU-Net-main/scripts/logs/20250214_162225/best_model_state_dict.pt",
+    "/Users/ranxu/Desktop/DIU-Net-main/scripts/logs/20250124_192606/best_model_state_dict.pt",
     map_location=device
 ))
 model.to(device)
